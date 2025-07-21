@@ -2,13 +2,17 @@
   "name": "yt-backend",
   "version": "1.0.0",
   "description": "A Node.js backend for fetching and managing YouTube videos, channels, and playlists using the YouTube Data API.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "\"youtube\""
   ],
   "author": "\"youtube-api\",",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
