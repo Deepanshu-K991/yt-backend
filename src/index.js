@@ -5,10 +5,10 @@ import mongoose, { connect } from "mongoose"
 import { DB_NAME } from "./constants.js"
 import connectDB from "./db/index.js"
 import express from "express" 
+import userRouter from "./routes/user.routes.js"
+import {app} from "./app.js"
 
 dotenv.config({ path: './.env' })
-
-const app = express(); // Initialize your Express app
 
 app.on("error", (error) => {
     console.error("Express app error:", error);
